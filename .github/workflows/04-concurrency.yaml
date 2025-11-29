@@ -2,7 +2,7 @@ name: Concurrency
 on: [push] #triggers
 concurrency:
   #This work flow triggers only once for any branch
-  groups: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true #Existing will be cancelled and latest will be run
 jobs:
   hello:

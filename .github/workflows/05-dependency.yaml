@@ -1,0 +1,25 @@
+name: Dependency
+on: [push]
+jobs:
+  #
+  job1: #These should be unique
+    runs-on: ubuntu-latest
+    steps: #stages
+      - name: step1
+        run: echo "Hi, i'm from job-1"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo "Hi, i'm from job-2"
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo "Hi, i'm from job3"
+
+  job4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo "Hi, i'm from job-4"

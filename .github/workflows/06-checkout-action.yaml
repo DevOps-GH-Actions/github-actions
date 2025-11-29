@@ -1,0 +1,12 @@
+name: Checkout Code
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    #Chekout happens here
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: display the files
+        run: ls -la

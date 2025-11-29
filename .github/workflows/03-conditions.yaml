@@ -3,7 +3,7 @@ on: [push]
 jobs:
   hello:
     runs-on: ubuntu-latest
-    steps:
+    steps: #Stages
     - name: step1
       if: github.ref == 'refs/heads/feature-*'
       run: echo 'Hello World'

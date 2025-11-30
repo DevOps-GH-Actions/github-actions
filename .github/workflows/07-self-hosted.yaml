@@ -5,6 +5,6 @@ jobs:  # Pipeline. One workflow can have multiple pipelines
     runs-on: self-hosted
     steps: #Stages
       - name: step1
-        runs: echo "Hello World"
+        run: echo "Hello World"
       - name: step2
-        runs: echo "Hello Github Actions"
+        run: echo "Hello Github Actions"
